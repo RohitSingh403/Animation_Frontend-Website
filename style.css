@@ -1,8 +1,12 @@
+@font-face {
+  font-family: neu;
+  src: url(/NeueHaasDisplayMediu.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gilroy";
+  font-family: neu;
 }
 
 html,
@@ -12,13 +16,14 @@ body {
 }
 
 #page1 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #efeae3;
   position: relative;
+  padding: 0 2vw;
 }
 nav {
-  padding: 2vw 2vw;
+  padding: 2vw 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -63,6 +68,49 @@ nav {
   position: relative;
   z-index: 9;
 }
-.nav-part2 h4:hover a{
-    color: white;
+.nav-part2 h4:hover a {
+  color: white;
+}
+#center {
+  height: 65vh;
+  width: 100%;
+  /* background-color: orange; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #0000003c;
+  padding-bottom: 2.5vw;
+}
+#left h3 {
+  width: 35vw;
+  font-size: 2.2vw;
+  line-height: 2.5vw;
+  font-weight: 5 00;
+}
+#center h1 {
+  font-size: 8vw;
+  text-align: right;
+  line-height: 7vw;
+  font-weight: 100;
+}
+#page1 video {
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 4vw;
+}
+#hero-shape {
+  position: absolute;
+  width: 36vw;
+  height: 36vw;
+  top: 68vh;
+  right: 0;
+  /* border-radius: 50%; */
+  /* filter: blur(15px); */
+}
+#hero-1 {
+  height: 100%;
+  width: 100%;
+  background-color: #fe320a;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
