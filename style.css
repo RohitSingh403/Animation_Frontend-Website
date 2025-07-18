@@ -177,6 +177,10 @@ nav {
     /* background-color: lightblue; */
     white-space: nowrap;
     display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 #moving-text h1{
     font-size: 9.5vw;
@@ -189,4 +193,14 @@ nav {
     background-color: #fe320a;
     display: inline-block;
     margin: 1vw 3vw;
+}
+
+@keyframes move {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+
 }
