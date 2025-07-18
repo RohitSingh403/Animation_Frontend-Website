@@ -94,7 +94,7 @@ nav {
   font-weight: 100;
 }
 #page1 video {
-    position: relative;
+  position: relative;
   width: 100%;
   border-radius: 30px;
   margin-top: 4vw;
@@ -121,7 +121,7 @@ nav {
   height: 25vw;
   position: absolute;
   width: 30vw;
-   background: linear-gradient(#fe320a,#fe5b0adf);
+  background: linear-gradient(#fe320a, #fe5b0adf);
   border-radius: 50%;
   filter: blur(25px);
   animation-name: anime2;
@@ -134,7 +134,7 @@ nav {
   height: 25vw;
   position: absolute;
   width: 30vw;
-  background: linear-gradient(#fe320a,#fe5b0adf);
+  background: linear-gradient(#fe320a, #fe5b0adf);
   border-radius: 50%;
   filter: blur(25px);
   animation-name: anime1;
@@ -145,7 +145,7 @@ nav {
 }
 @keyframes anime1 {
   from {
-    transform: translate(55%,-4%);
+    transform: translate(55%, -4%);
   }
   to {
     transform: translate(0%, 10%);
@@ -153,9 +153,40 @@ nav {
 }
 @keyframes anime2 {
   from {
-    transform: translate(5%,-5%);
+    transform: translate(5%, -5%);
   }
   to {
     transform: translate(-20%, 30%);
   }
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 6vw;
+    background-color: #efeae3;
+}
+#moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    /* background-color: lightblue; */
+    white-space: nowrap;
+    display: inline-block;
+}
+#moving-text h1{
+    font-size: 9.5vw;
+    display: inline-block;
+}
+#circle{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #fe320a;
+    display: inline-block;
+    margin: 1vw 3vw;
 }
