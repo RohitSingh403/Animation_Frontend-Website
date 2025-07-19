@@ -258,25 +258,54 @@ nav {
   }
 }
 #page3 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #efeae3;
+  padding: 4vw 0;
 }
 .elem {
   position: relative;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(87, 87, 87);
   height: 150px;
   width: 100%;
+  overflow: hidden;
   /* background-color: #fe320a; */
   display: flex;
   align-items: center;
   padding: 0 3vw;
 }
-.elem h2{
+.elem h2 {
   font-size: 3vw;
+  position: relative;
+  z-index: 9;
 }
-.elem .overlay h2{
-    height: 100%;
-    width: 100%;
-    /* background-color: orange; */
+.elem .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #FF9831;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all ease-in 0.28s;
+}
+.elem:hover .overlay {
+  top: 0;
+}
+
+#elem-container{
+  
+}
+
+#fixed-image{
+    height: 28vw;
+    width: 23.5vw;
+    /* background-color: cadetblue; */
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 55%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
 }
