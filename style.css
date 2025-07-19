@@ -2,6 +2,18 @@
   font-family: neu;
   src: url(/NeueHaasDisplayMediu.ttf);
 }
+@font-face {
+    font-family: nue-thin;
+    src: url(./NeueHaasDisplayXThin.ttf);
+}
+@font-face {
+    font-family: nue-light;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+@font-face {
+    font-family: nue-bold;
+    src: url(./NeueHaasDisplayBold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -282,7 +294,7 @@ nav {
 .elem .overlay {
   height: 100%;
   width: 100%;
-  background-color: #FF9831;
+  background-color: #ff9831;
   position: absolute;
   left: 0;
   top: -100%;
@@ -292,20 +304,33 @@ nav {
   top: 0;
 }
 
-#elem-container{
-  
+#space{
+    width: 100%;
+    height: 50%;
+    display: flex ;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 9;
+    text-align: end;
+}
+#space h5{
+    font-size: 30px;
+}
+#space h6{
+    font-size: 20px;
+    font-family: nue-thin;
 }
 
-#fixed-image{
-    height: 28vw;
-    width: 23.5vw;
-    /* background-color: cadetblue; */
-    border-radius: 10px;
-    position: fixed;
-    z-index: 99;
-    left: 55%;
-    top: 25%;
-    display: none;
-    background-size: cover;
-    background-position: center;
+#fixed-image {
+  height: 28vw;
+  width: 23.5vw;
+  /* background-color: cadetblue; */
+  border-radius: 10px;
+  position: fixed;
+  z-index: 99;
+  left: 55%;
+  top: 25%;
+  display: none;
+  background-size: cover;
+  background-position: center;
 }
